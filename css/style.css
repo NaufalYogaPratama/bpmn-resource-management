@@ -1,0 +1,269 @@
+:root {
+      --primary: #025D66;
+      --primary-light: #0B9AAB;
+      --primary-subtle: #E6F7F9;
+      --admin-color: #7E22CE;
+      --admin-bg: #FAF5FF;
+      --devman-color: #15803D;
+      --devman-bg: #F0FDF4;
+      --system-color: #0F766E;
+      --system-bg: #F0FDFA;
+      --gray-50: #F8FAFC;
+      --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0;
+      --gray-300: #CBD5E1;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1E293B;
+      --gray-900: #0F172A;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: #F8FAFC;
+      color: var(--gray-800);
+      padding: 0.85rem 1.25rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1240px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    /* Minimalist Compact Header */
+    header {
+      margin-bottom: 0.6rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--gray-200);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .brand-title {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 0.78rem;
+      color: var(--gray-600);
+      font-weight: 500;
+    }
+
+    .actors-pill-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .actor-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: white;
+      border: 1px solid var(--gray-300);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .pill-admin {
+      color: var(--admin-color);
+      border-color: #D8B4FE;
+      background: var(--admin-bg);
+    }
+
+    .pill-devman {
+      color: var(--devman-color);
+      border-color: #86EFAC;
+      background: var(--devman-bg);
+    }
+
+    .pill-system {
+      color: var(--system-color);
+      border-color: #99F6E4;
+      background: var(--system-bg);
+    }
+
+    /* PRIMARY TABS (Tab 1: Level 0, Tab 2: Level 1) */
+    .primary-tabs {
+      display: flex;
+      gap: 6px;
+      border-bottom: 2px solid var(--gray-200);
+      margin-bottom: 0.65rem;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      padding: 7px 16px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--gray-600);
+      cursor: pointer;
+      border-radius: 6px 6px 0 0;
+      position: relative;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn:hover {
+      color: var(--primary);
+      background-color: var(--primary-subtle);
+    }
+
+    .tab-btn.active {
+      color: var(--primary);
+      font-weight: 800;
+      background: white;
+    }
+
+    .tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px 3px 0 0;
+    }
+
+    /* SUB-TABS ROW (Inside Level 1) */
+    .sub-tabs-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 0.65rem;
+      padding: 5px 8px;
+      background: var(--gray-100);
+      border-radius: 7px;
+      border: 1px solid var(--gray-200);
+      align-items: center;
+    }
+
+    .sub-tabs-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gray-600);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-right: 4px;
+      padding-left: 2px;
+    }
+
+    .sub-tab-btn {
+      background: white;
+      border: 1px solid var(--gray-300);
+      color: var(--gray-700);
+      padding: 4px 11px;
+      border-radius: 5px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.12s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .sub-tab-btn:hover {
+      background: var(--primary-subtle);
+      color: var(--primary);
+      border-color: var(--primary-light);
+    }
+
+    .sub-tab-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      font-weight: 700;
+      box-shadow: 0 1px 3px rgba(2, 93, 102, 0.25);
+    }
+
+    /* Tab Panes */
+    .tab-pane {
+      display: none;
+      flex: 1;
+    }
+
+    .tab-pane.active {
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 0.15s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(3px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Diagram Card */
+    .diagram-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+      padding: 0.75rem 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: auto;
+    }
+
+    .diagram-card svg {
+      width: 100%;
+      max-height: calc(100vh - 165px);
+      height: auto;
+      display: block;
+    }
+
+    /* Interactive Level 0 boxes */
+    .bpmn-box {
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .bpmn-box:hover rect.box-bg {
+      stroke: var(--primary);
+      stroke-width: 2.2px;
+      fill: #F0FDFA;
+    }
+
+    .bpmn-box:hover text.box-title {
+      fill: var(--primary);
+      font-weight: 800;
+    }

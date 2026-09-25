@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RMS — BPMN Process Model (Level 0 & Level 1)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- MINIMALIST HEADER -->
+    <header>
+      <div class="brand-title">
+        <h1>Resource Management System (RMS)</h1>
+        <span class="subtitle">BPMN 2.0 Process Models</span>
+      </div>
+      <div class="actors-pill-group">
+        <span class="actor-pill pill-devman">👤 Project Manager (PM)</span>
+        <span class="actor-pill pill-admin">🛡️ Admin</span>
+        <span class="actor-pill pill-system">⚙️ System</span>
+      </div>
+    </header>
+
+    <!-- PRIMARY TABS -->
+    <div class="primary-tabs">
+      <button class="tab-btn active" id="btn-tab-l0" onclick="switchPrimaryTab('l0')">Tab 1: Level 0 (BPMN
+        Landscape)</button>
+      <button class="tab-btn" id="btn-tab-l1" onclick="switchPrimaryTab('l1')">Tab 2: Level 1 (Workflow Detail)</button>
+    </div>
+
+    <!-- TAB 1 CONTENT: LEVEL 0 -->
+    <div class="tab-pane active" id="pane-l0">
+      <div class="diagram-card">
+        <div id="l0-diagram-container" style="width: 100%; display: flex; justify-content: center;"></div>
+      </div>
+    </div>
+
+    <!-- TAB 2 CONTENT: LEVEL 1 -->
+    <div class="tab-pane" id="pane-l1">
+      <!-- SUB-TABS ROW (BAWAHNYA ADA TAB LAGI: LOGIN DLL) -->
+      <div class="sub-tabs-bar">
+        <span class="sub-tabs-label">Fitur Level 1:</span>
+        <button class="sub-tab-btn active" id="sbtn-login" onclick="switchSubTab('login')">🔐 Login</button>
+        <button class="sub-tab-btn" id="sbtn-dashboard" onclick="switchSubTab('dashboard')">📊 Dashboard</button>
+        <button class="sub-tab-btn" id="sbtn-resource" onclick="switchSubTab('resource')">👥 Resource</button>
+        <button class="sub-tab-btn" id="sbtn-project" onclick="switchSubTab('project')">📁 Project</button>
+        <button class="sub-tab-btn" id="sbtn-activities" onclick="switchSubTab('activities')">📋 Activities</button>
+        <button class="sub-tab-btn" id="sbtn-notification" onclick="switchSubTab('notification')">🔔
+          Notification</button>
+        <button class="sub-tab-btn" id="sbtn-devman" onclick="switchSubTab('devman')">👤 Project Manager (PM)</button>
+      </div>
+
+      <div class="diagram-card">
+        <div id="l1-diagram-container" style="width: 100%; display: flex; justify-content: center;">
+          <!-- SVG rendered dynamically -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
