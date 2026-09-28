@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Antigravity" version="21.0.0" type="device">
+  <diagram id="BPMN-L2-7-2" name="Sub-Module 7.2 - Verification &amp; Handover Review">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool_7_2" parent="1" value="SUB-MODULE 7.2: ADMIN VERIFICATION &amp;amp; HANDOVER REVIEW (BPMN LEVEL 2)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=40;horizontalStack=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=11.5;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="40" width="1040" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin_7_2" parent="pool_7_2" value="Admin (PMO)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="0" width="1000" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_sys_7_2" parent="pool_7_2" value="RMS Backend Engine" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="240" width="1000" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="s_7_2" parent="lane_admin_7_2" value="Pending Release&lt;br/&gt;in Queue" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="25" y="95" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_7_2" parent="lane_admin_7_2" value="&lt;b&gt;1. Open Release Modal&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Inspect effective offboarding date&lt;br/&gt;and early release justification&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="95" y="80" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_7_2" parent="lane_admin_7_2" value="&lt;b&gt;3. Review Knowledge Transfer&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Confirm task completion and&lt;br/&gt;verify no project disruption&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="490" y="80" width="155" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="t_flag_7_2" parent="lane_admin_7_2" value="&lt;b&gt;Flag Handover Discrepancy&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Record incomplete transfer&lt;br/&gt;for rejection justification&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="690" y="140" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_rej_7_2" parent="lane_admin_7_2" value="Proceed to&lt;br/&gt;Rejection Flow" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="900" y="155" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="t_pass_7_2" parent="lane_admin_7_2" value="&lt;b&gt;Confirm Early Offboarding&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Verify return to Talent Pool,&lt;br/&gt;ready for formal approval&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="690" y="30" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_app_7_2" parent="lane_admin_7_2" value="Proceed to&lt;br/&gt;Approval Flow" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="900" y="45" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_7_2" parent="lane_sys_7_2" value="&lt;b&gt;2. Fetch Assignment Context&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Query assignment dates, active role,&lt;br/&gt;and project milestone records&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="270" y="75" width="165" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_avail_7_2" parent="lane_sys_7_2" value="Handover Verified&lt;br/&gt;&amp;amp; Scope Finalized?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="480" y="88" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_conflict_7_2" parent="lane_sys_7_2" value="&lt;b&gt;Flag Incomplete Handover&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Critical sprint deliverables&lt;br/&gt;unresolved or undocumented&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="560" y="140" width="165" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_7_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="s_7_2" target="t1_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_7_2" parent="1" value="Fetch Context" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t1_7_2" target="t2_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_7_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t2_7_2" target="gw_avail_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_no_7_2" parent="1" value="[Pending Work]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="gw_avail_7_2" target="t_conflict_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_flag_7_2" parent="1" value="Alert Admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="t_conflict_7_2" target="t_flag_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_end_rej_7_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_flag_7_2" target="end_rej_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_yes_7_2" parent="1" value="[Complete]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="gw_avail_7_2" target="t3_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pass_7_2" parent="1" value="Verified" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t3_7_2" target="t_pass_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_end_app_7_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_pass_7_2" target="end_app_7_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cap_7_2" parent="1" value="Figure: BPMN Level 2 - Sub-Module 7.2: Admin Verification &amp;amp; Handover Review" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="300" y="535" width="520" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
