@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Antigravity" version="21.0.0" type="device">
+  <diagram id="BPMN-L2-6-1" name="Sub-Module 6.1 - Initiation &amp; Validation">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool_6_1" parent="1" value="SUB-MODULE 6.1: EXTENSION INITIATION &amp;amp; TIMELINE VALIDATION (BPMN LEVEL 2)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=40;horizontalStack=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=11.5;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="40" width="1040" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_pm_6_1" parent="pool_6_1" value="Project Manager (PM)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="0" width="1000" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_sys_6_1" parent="pool_6_1" value="RMS Client System (Frontend)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="240" width="1000" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="s_6_1" parent="lane_pm_6_1" value="Assignment Ending&lt;br/&gt;Soon Alert" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="25" y="95" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_6_1" parent="lane_pm_6_1" value="&lt;b&gt;1. Open Team Member View&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Inspect active member list on&lt;br/&gt;Ongoing Project details modal&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="95" y="80" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_6_1" parent="lane_pm_6_1" value="&lt;b&gt;2. Set New End Date&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Specify extended date &amp;amp; input&lt;br/&gt;mandatory extension justification&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="280" y="80" width="155" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_6_1" parent="lane_pm_6_1" value="&lt;b&gt;3. Click Submit Extension&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Trigger client-side timeline&lt;br/&gt;boundary validations&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="470" y="80" width="140" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fix_6_1" parent="lane_pm_6_1" value="&lt;b&gt;Adjust Extended Date&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Ensure New End Date &amp;gt; current&lt;br/&gt;endDate and provide reason&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="645" y="25" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_val_6_1" parent="lane_sys_6_1" value="Timeline Data&lt;br/&gt;Valid?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="520" y="90" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_err_6_1" parent="lane_sys_6_1" value="&lt;b&gt;Show Extension Errors&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;• newEndDate &amp;gt; current endDate&lt;br/&gt;• Justification must not be empty&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="640" y="120" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="t_pkg_6_1" parent="lane_sys_6_1" value="&lt;b&gt;Create Extension Request&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Set type EXTENSION and&lt;br/&gt;set status to PENDING&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="640" y="30" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="t_queue_6_1" parent="lane_sys_6_1" value="&lt;b&gt;Queue in Admin Dashboard&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Place in Pending Approval list &amp;amp;&lt;br/&gt;display proposed extension delta&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="835" y="30" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_6_1" parent="lane_sys_6_1" value="Extension Request&lt;br/&gt;Queued (PENDING)" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="945" y="140" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_6_1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="s_6_1" target="t1_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_6_1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t1_6_1" target="t2_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3_6_1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t2_6_1" target="t3_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_6_1" parent="1" value="Validate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="t3_6_1" target="gw_val_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_err_6_1" parent="1" value="[Invalid]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="gw_val_6_1" target="t_err_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_loop_6_1" parent="1" value="Prompt Fix" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="t_err_6_1" target="t_fix_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_re_6_1" parent="1" value="Re-submit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_fix_6_1" target="t3_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_ok_6_1" parent="1" value="[Valid]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="gw_val_6_1" target="t_pkg_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_q_6_1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_pkg_6_1" target="t_queue_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_end_6_1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="t_queue_6_1" target="end_6_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cap_6_1" parent="1" value="Figure: BPMN Level 2 - Sub-Module 6.1: Extension Initiation &amp;amp; Timeline Validation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="300" y="535" width="520" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
