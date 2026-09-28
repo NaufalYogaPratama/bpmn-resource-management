@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Antigravity" version="21.0.0" type="device"><diagram id="RMI-BPMN-Level-0-RoleBased" name="BPMN Level 0 - Role Based">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool0" parent="1" value="RESOURCE MANAGEMENT SYSTEM (RMS)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=40;horizontalPrism=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;" vertex="1">
+          <mxGeometry x="50" y="40" width="1020" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin0" parent="pool0" value="Admin (PMO)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#64748B;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;" vertex="1">
+          <mxGeometry x="40" y="0" width="980" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_pm0" parent="pool0" value="Project Manager (PM)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#64748B;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;" vertex="1">
+          <mxGeometry x="40" y="180" width="980" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_sys0" parent="pool0" value="RMS System" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#64748B;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;" vertex="1">
+          <mxGeometry x="40" y="380" width="980" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="lane_admin0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="160" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b1_p" parent="lane_admin0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="202" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" parent="lane_admin0" value="&lt;b&gt;Process 1&lt;/b&gt;&lt;br/&gt;Resource Master Management" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="135" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="lane_admin0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="440" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b2_p" parent="lane_admin0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="482" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" parent="lane_admin0" value="&lt;b&gt;Process 2&lt;/b&gt;&lt;br/&gt;Request Approval &amp;amp; Decision" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="415" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="lane_admin0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="720" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b3_p" parent="lane_admin0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="762" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" parent="lane_admin0" value="&lt;b&gt;Process 3&lt;/b&gt;&lt;br/&gt;Dashboard &amp;amp; Resource Monitoring" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="695" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="lane_pm0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="100" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b4_p" parent="lane_pm0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="142" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" parent="lane_pm0" value="&lt;b&gt;Process 4&lt;/b&gt;&lt;br/&gt;Project Proposal Submission" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="75" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="lane_pm0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="320" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b5_p" parent="lane_pm0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="362" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" parent="lane_pm0" value="&lt;b&gt;Process 5&lt;/b&gt;&lt;br/&gt;Assign Resource Request" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="295" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" parent="lane_pm0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="560" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b6_p" parent="lane_pm0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="602" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t6" parent="lane_pm0" value="&lt;b&gt;Process 6&lt;/b&gt;&lt;br/&gt;Extend Resource Request" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="535" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b7" parent="lane_pm0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="780" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b7_p" parent="lane_pm0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="822" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t7" parent="lane_pm0" value="&lt;b&gt;Process 7&lt;/b&gt;&lt;br/&gt;Release Resource Request" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="755" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b8" parent="lane_sys0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="200" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b8_p" parent="lane_sys0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="242" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t8" parent="lane_sys0" value="&lt;b&gt;Process 8&lt;/b&gt;&lt;br/&gt;Automated Expiration &amp;amp; Release" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="175" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b9" parent="lane_sys0" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1E293B;strokeWidth=1.5;shadow=1;" vertex="1">
+          <mxGeometry x="650" y="45" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b9_p" parent="lane_sys0" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#1E293B;strokeWidth=1;fillColor=#F8FAFC;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry x="692" y="94" width="16" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="t9" parent="lane_sys0" value="&lt;b&gt;Process 9&lt;/b&gt;&lt;br/&gt;Notifications &amp;amp; Audit Logging" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontColor=#0F172A;" vertex="1">
+          <mxGeometry x="625" y="118" width="150" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="RMI-BPMN-Level-1-Process-4" name="BPMN Level 1 - Process 4">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool" parent="1" value="PROCESS 4: PROJECT PROPOSAL SUBMISSION (BPMN LEVEL 1)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=40;horizontalPrism=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="40" width="1080" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_pm" parent="pool" value="Project Manager (PM)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="0" width="1040" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin" parent="pool" value="Admin (PMO)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="230" width="1040" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="start_event" parent="lane_pm" value="New Client&lt;br/&gt;Project Inception" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="30" y="90" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_1" parent="lane_pm" value="&lt;b&gt;1. Input Project &amp;amp; Resource Data&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Client, Project Name, &amp;amp;&lt;br/&gt;Select Resource from Pool&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="100" y="75" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="task_2" parent="lane_pm" value="&lt;b&gt;2. Submit Proposal&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Dispatch to Admin queue&lt;br/&gt;(Status: PENDING)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="300" y="75" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="task_5a" parent="lane_pm" value="&lt;b&gt;5A. Receive Approval Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Project is active (Ongoing) &amp;amp;&lt;br/&gt;Team officially onboarded&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="810" y="40" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_a" parent="lane_pm" value="Ongoing Project&lt;br/&gt;Active" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="1000" y="55" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_5b" parent="lane_pm" value="&lt;b&gt;5B. Receive Rejection Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Read Rejection Reason on&lt;br/&gt;PM Dashboard (Revise/Cancel)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="810" y="140" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_b" parent="lane_pm" value="Proposal&lt;br/&gt;Rejected" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="1000" y="155" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_3" parent="lane_admin" value="&lt;b&gt;3. Review Proposal Feasibility&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Verify talent availability&lt;br/&gt;(Check Available status)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="300" y="75" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_decision" parent="lane_admin" value="Approved?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="490" y="88" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4a" parent="lane_admin" value="&lt;b&gt;4A. Approve Proposal&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Project becomes ONGOING&lt;br/&gt;• Resource becomes ASSIGNED&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="580" y="30" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4b" parent="lane_admin" value="&lt;b&gt;4B. Reject Proposal&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Input Rejection Reason&lt;br/&gt;• Resource remains AVAILABLE&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="580" y="140" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="start_event" target="task_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_1" target="task_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" value="Submit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_2" target="task_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_3" target="gw_decision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app" parent="1" value="[Approved]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="gw_decision" target="task_4a">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="297" />
+              <mxPoint x="510" y="297" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_rej" parent="1" value="[Rejected]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="gw_decision" target="task_4b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="407" />
+              <mxPoint x="510" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_5a" parent="1" value="Notify PM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_4a" target="task_5a">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="297" />
+              <mxPoint x="790" y="113" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ok" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_5a" target="end_a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_5b" parent="1" value="Notify PM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_4b" target="task_5b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="407" />
+              <mxPoint x="790" y="213" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_fail" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_5b" target="end_b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" value="Figure: BPMN Level 1 - Process 4: Project Proposal Submission" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="340" y="540" width="480" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+<diagram id="RMI-BPMN-Level-1-Process-5" name="BPMN Level 1 - Process 5">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool" parent="1" value="PROCESS 5: ASSIGN RESOURCE REQUEST (BPMN LEVEL 1)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=40;horizontalPrism=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="40" width="1080" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_pm" parent="pool" value="Project Manager (PM)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="0" width="1040" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin" parent="pool" value="Admin (PMO)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="230" width="1040" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="start_event" parent="lane_pm" value="Additional Staffing&lt;br/&gt;Requirement" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="30" y="90" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_1" parent="lane_pm" value="&lt;b&gt;1. Select Project &amp;amp; Resource&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Pick Ongoing Project &amp;amp;&lt;br/&gt;Available Resource from Pool&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="100" y="75" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="task_2" parent="lane_pm" value="&lt;b&gt;2. Submit Assignment Request&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Specify role &amp;amp; period dates&lt;br/&gt;(Status: PENDING)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="300" y="75" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="task_5a" parent="lane_pm" value="&lt;b&gt;5A. Receive Assignment Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Additional resource officially&lt;br/&gt;assigned to Ongoing Project&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="810" y="40" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_a" parent="lane_pm" value="Resource&lt;br/&gt;Assigned" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="1000" y="55" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_5b" parent="lane_pm" value="&lt;b&gt;5B. Receive Rejection Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Review Rejection Reason on&lt;br/&gt;PM Dashboard&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="810" y="140" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_b" parent="lane_pm" value="Assignment&lt;br/&gt;Rejected" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="1000" y="155" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_3" parent="lane_admin" value="&lt;b&gt;3. Evaluate Talent Availability&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Confirm talent capacity &amp;amp;&lt;br/&gt;ensure no schedule overlap&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="300" y="75" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_decision" parent="lane_admin" value="Approved?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="490" y="88" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4a" parent="lane_admin" value="&lt;b&gt;4A. Approve Assignment&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Create Resource Assignment&lt;br/&gt;• Update status to ASSIGNED&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="580" y="30" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4b" parent="lane_admin" value="&lt;b&gt;4B. Reject Assignment&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Input Rejection Reason&lt;br/&gt;• Talent remains AVAILABLE&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="580" y="140" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="start_event" target="task_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_1" target="task_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" value="Submit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_2" target="task_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_3" target="gw_decision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app" parent="1" value="[Approved]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="gw_decision" target="task_4a">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="297" />
+              <mxPoint x="510" y="297" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_rej" parent="1" value="[Rejected]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="gw_decision" target="task_4b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="407" />
+              <mxPoint x="510" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_5a" parent="1" value="Notify PM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_4a" target="task_5a">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="297" />
+              <mxPoint x="790" y="113" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ok" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_5a" target="end_a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_5b" parent="1" value="Notify PM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_4b" target="task_5b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="407" />
+              <mxPoint x="790" y="213" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_fail" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_5b" target="end_b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" value="Figure: BPMN Level 1 - Process 5: Assign Resource Request" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="340" y="540" width="480" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+<diagram id="RMI-BPMN-Level-1-Process-6" name="BPMN Level 1 - Process 6">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool" parent="1" value="PROCESS 6: EXTEND RESOURCE REQUEST (BPMN LEVEL 1)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=40;horizontalPrism=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="40" width="1080" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_pm" parent="pool" value="Project Manager (PM)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="0" width="1040" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin" parent="pool" value="Admin (PMO)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="230" width="1040" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="start_event" parent="lane_pm" value="Assignment&lt;br/&gt;Ending Soon" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="30" y="90" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_1" parent="lane_pm" value="&lt;b&gt;1. Select Resource &amp;amp; New Date&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Choose active assignment,&lt;br/&gt;set New End Date &amp;amp; reason&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="100" y="75" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="task_2" parent="lane_pm" value="&lt;b&gt;2. Submit Extension Request&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Send extension proposal&lt;br/&gt;(Status: PENDING)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="300" y="75" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="task_5a" parent="lane_pm" value="&lt;b&gt;5A. Receive Extension Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Timeline extension confirmed,&lt;br/&gt;talent continues delivery&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="810" y="40" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_a" parent="lane_pm" value="Assignment&lt;br/&gt;Extended" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="1000" y="55" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_5b" parent="lane_pm" value="&lt;b&gt;5B. Receive Rejection Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Prepare offboarding based&lt;br/&gt;on original end date&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="810" y="140" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_b" parent="lane_pm" value="Extension&lt;br/&gt;Rejected" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="1000" y="155" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_3" parent="lane_admin" value="&lt;b&gt;3. Assess Extension Feasibility&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Check talent pipeline and&lt;br/&gt;ensure no conflicting booking&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="300" y="75" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_decision" parent="lane_admin" value="Approved?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="490" y="88" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4a" parent="lane_admin" value="&lt;b&gt;4A. Approve Extension&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Update Assignment endDate&lt;br/&gt;• Status remains ACTIVE &amp;amp; ASSIGNED&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="580" y="30" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4b" parent="lane_admin" value="&lt;b&gt;4B. Reject Extension&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Input Rejection Reason&lt;br/&gt;• Schedule retains original date&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="580" y="140" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="start_event" target="task_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_1" target="task_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" value="Submit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_2" target="task_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_3" target="gw_decision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app" parent="1" value="[Approved]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="gw_decision" target="task_4a">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="297" />
+              <mxPoint x="510" y="297" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_rej" parent="1" value="[Rejected]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="gw_decision" target="task_4b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="407" />
+              <mxPoint x="510" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_5a" parent="1" value="Notify PM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_4a" target="task_5a">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="297" />
+              <mxPoint x="790" y="113" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ok" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_5a" target="end_a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_5b" parent="1" value="Notify PM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_4b" target="task_5b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="407" />
+              <mxPoint x="790" y="213" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_fail" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_5b" target="end_b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" value="Figure: BPMN Level 1 - Process 6: Extend Resource Request" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="340" y="540" width="480" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+<diagram id="RMI-BPMN-Level-1-Process-7" name="BPMN Level 1 - Process 7">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool" parent="1" value="PROCESS 7: RELEASE RESOURCE REQUEST (BPMN LEVEL 1)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=40;horizontalPrism=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=12;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="40" width="1080" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_pm" parent="pool" value="Project Manager (PM)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="0" width="1040" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin" parent="pool" value="Admin (PMO)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="230" width="1040" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="start_event" parent="lane_pm" value="Early Delivery /&lt;br/&gt;Handover Done" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="30" y="90" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_1" parent="lane_pm" value="&lt;b&gt;1. Select Resource &amp;amp; Reason&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Select assigned member &amp;amp;&lt;br/&gt;specify release justification&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="100" y="75" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="task_2" parent="lane_pm" value="&lt;b&gt;2. Submit Release Request&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Send early offboarding request&lt;br/&gt;(Status: PENDING)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="300" y="75" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="task_5a" parent="lane_pm" value="&lt;b&gt;5A. Receive Release Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Resource successfully released&lt;br/&gt;back to organizational pool&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="810" y="40" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_a" parent="lane_pm" value="Resource&lt;br/&gt;Released" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="1000" y="55" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_5b" parent="lane_pm" value="&lt;b&gt;5B. Receive Rejection Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Review reason, resource remains&lt;br/&gt;committed to project&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="810" y="140" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="end_b" parent="lane_pm" value="Release&lt;br/&gt;Rejected" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="1000" y="155" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="task_3" parent="lane_admin" value="&lt;b&gt;3. Review Release Application&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Verify task completion &amp;amp;&lt;br/&gt;confirm return to Talent Pool&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="300" y="75" width="150" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_decision" parent="lane_admin" value="Approved?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="490" y="88" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4a" parent="lane_admin" value="&lt;b&gt;4A. Approve Early Release&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Set status to RELEASED&lt;br/&gt;• Talent returns to AVAILABLE&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="580" y="30" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4b" parent="lane_admin" value="&lt;b&gt;4B. Reject Release&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Input Rejection Reason&lt;br/&gt;• Assignment remains ACTIVE&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
+          <mxGeometry x="580" y="140" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="start_event" target="task_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_1" target="task_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" value="Submit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_2" target="task_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_3" target="gw_decision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app" parent="1" value="[Approved]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="gw_decision" target="task_4a">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="297" />
+              <mxPoint x="510" y="297" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_rej" parent="1" value="[Rejected]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="gw_decision" target="task_4b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="407" />
+              <mxPoint x="510" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_5a" parent="1" value="Notify PM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_4a" target="task_5a">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="297" />
+              <mxPoint x="790" y="113" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ok" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_5a" target="end_a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_5b" parent="1" value="Notify PM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_4b" target="task_5b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="407" />
+              <mxPoint x="790" y="213" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_fail" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;" edge="1" source="task_5b" target="end_b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" value="Figure: BPMN Level 1 - Process 7: Release Resource Request" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="340" y="540" width="480" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
