@@ -20,6 +20,9 @@
         <mxCell id="task_1" parent="lane_pm" value="&lt;b&gt;1. Select Resource &amp;amp; New Date&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Choose active assignment,&lt;br/&gt;set New End Date &amp;amp; reason&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
           <mxGeometry x="110" y="80" width="150" height="66" as="geometry" />
         </mxCell>
+        <mxCell id="task_1_plus" parent="lane_pm" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;fontColor=#000000;" vertex="1">
+          <mxGeometry x="178" y="134" width="14" height="12" as="geometry" />
+        </mxCell>
         <mxCell id="task_2" parent="lane_pm" value="&lt;b&gt;2. Submit Extension Request&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Send extension proposal&lt;br/&gt;(Status: PENDING)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
           <mxGeometry x="300" y="80" width="150" height="66" as="geometry" />
         </mxCell>
@@ -38,14 +41,23 @@
         <mxCell id="task_3" parent="lane_admin" value="&lt;b&gt;3. Assess Extension Feasibility&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;Check talent pipeline and&lt;br/&gt;ensure no conflicting booking&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
           <mxGeometry x="300" y="80" width="150" height="66" as="geometry" />
         </mxCell>
+        <mxCell id="task_3_plus" parent="lane_admin" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;fontColor=#000000;" vertex="1">
+          <mxGeometry x="368" y="134" width="14" height="12" as="geometry" />
+        </mxCell>
         <mxCell id="gw_decision" parent="lane_admin" value="Approved?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
           <mxGeometry x="490" y="93" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="task_4a" parent="lane_admin" value="&lt;b&gt;4A. Approve Extension&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Update Assignment endDate&lt;br/&gt;• Status remains ACTIVE &amp;amp; ASSIGNED&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
           <mxGeometry x="570" y="30" width="165" height="72" as="geometry" />
         </mxCell>
+        <mxCell id="task_4a_plus" parent="lane_admin" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;fontColor=#000000;" vertex="1">
+          <mxGeometry x="645" y="90" width="14" height="12" as="geometry" />
+        </mxCell>
         <mxCell id="task_4b" parent="lane_admin" value="&lt;b&gt;4B. Reject Extension&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9.5px;color:#333333;&quot;&gt;• Input Rejection Reason&lt;br/&gt;• Schedule retains original date&lt;br/&gt;• Log HistoryLog &amp;amp; notify PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10.5;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=4;" vertex="1">
           <mxGeometry x="570" y="135" width="165" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="task_4b_plus" parent="lane_admin" value="+" style="shape=rect;html=1;whiteSpace=wrap;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;fontColor=#000000;" vertex="1">
+          <mxGeometry x="645" y="195" width="14" height="12" as="geometry" />
         </mxCell>
         <mxCell id="e1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="start_event" target="task_1">
           <mxGeometry relative="1" as="geometry" />
