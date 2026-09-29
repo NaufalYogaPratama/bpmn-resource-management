@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Antigravity" version="21.0.0" type="device">
+  <diagram id="BPMN-L2-4-2" name="Sub-Module 4.2 - Review &amp; Decision Execution">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="900" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool_4_2" parent="1" value="SUB-MODULE 4.2: ADMIN REVIEW &amp;amp; DECISION EXECUTION (BPMN LEVEL 2)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=40;horizontalStack=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=11.5;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="40" width="1060" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin_4_2" parent="pool_4_2" value="Admin (PMO)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="0" width="1020" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_sys_4_2" parent="pool_4_2" value="RMS Backend Engine (@Transactional)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="180" width="1020" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_pm_4_2" parent="pool_4_2" value="Project Manager (PM)" style="swimlane;html=1;horizontal=0;startSize=35;collapsible=0;swimlaneFillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1;fontFamily=Arial;fontSize=11;fontStyle=1;align=center;fontColor=#000000;" vertex="1">
+          <mxGeometry x="40" y="360" width="1020" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s_4_2" parent="lane_admin_4_2" value="Pending Proposal&lt;br/&gt;in Queue" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="25" y="75" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inspect_4_2" parent="lane_admin_4_2" value="&lt;b&gt;1. Inspect Proposal Modal&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Review Client, Project Profile,&lt;br/&gt;&amp;amp; Proposed Resource Plan table&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="90" y="60" width="165" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_dec_4_2" parent="lane_admin_4_2" value="Admin&lt;br/&gt;Decision?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="290" y="73" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_act_app_4_2" parent="lane_admin_4_2" value="&lt;b&gt;2A. Click Approve Request&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Confirm team staffing and&lt;br/&gt;authorize project commencement&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="365" y="20" width="160" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="t_act_rej_4_2" parent="lane_admin_4_2" value="&lt;b&gt;2B. Click Decline Request&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Open rejection sidebar &amp;amp;&lt;br/&gt;enter mandatory Rejection Reason&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="365" y="105" width="160" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="t_prov_app_4_2" parent="lane_sys_4_2" value="&lt;b&gt;Execute Project Provisioning&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;• Request status -&amp;gt; APPROVED&lt;br/&gt;• Project status -&amp;gt; ONGOING&lt;br/&gt;• Create Resource Assignment (ACTIVE)&lt;br/&gt;• Talent status -&amp;gt; ASSIGNED&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="560" y="15" width="210" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="t_audit_app_4_2" parent="lane_sys_4_2" value="&lt;b&gt;Log Audit &amp;amp; Emit Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;• Write to HistoryLog (APPROVE)&lt;br/&gt;• Dispatch in-app alert to PM&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="805" y="20" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_reason_4_2" parent="lane_sys_4_2" value="Rejection Reason&lt;br/&gt;Entered?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="550" y="115" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_prov_rej_4_2" parent="lane_sys_4_2" value="&lt;b&gt;Update Rejection State&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;• Request status -&amp;gt; REJECTED&lt;br/&gt;• Talent remains AVAILABLE in pool&lt;br/&gt;• Write HistoryLog (REJECT)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="630" y="100" width="185" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t_audit_rej_4_2" parent="lane_sys_4_2" value="&lt;b&gt;Dispatch Rejection Notice&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Include Rejection Reason in&lt;br/&gt;PM notification payload&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="845" y="102" width="155" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="t_pm_app_4_2" parent="lane_pm_4_2" value="&lt;b&gt;View Active Project&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Access Ongoing Projects list&lt;br/&gt;&amp;amp; onboard assigned team&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="805" y="40" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="end_app_4_2" parent="lane_pm_4_2" value="Ongoing Project&lt;br/&gt;Active &amp;amp; Staffed" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="995" y="55" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="t_pm_rej_4_2" parent="lane_pm_4_2" value="&lt;b&gt;Review Rejection Details&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:9px;color:#333;&quot;&gt;Read reason on PM Dashboard&lt;br/&gt;(budget, scope, or scheduling)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;align=center;verticalAlign=middle;shadow=0;spacing=3;" vertex="1">
+          <mxGeometry x="700" y="40" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_pm_action_4_2" parent="lane_pm_4_2" value="Revise or&lt;br/&gt;Cancel?" style="shape=rhombus;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="885" y="53" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="end_cancel_4_2" parent="lane_pm_4_2" value="Project Initiative&lt;br/&gt;Cancelled" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="975" y="105" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="end_revise_4_2" parent="lane_pm_4_2" value="Loop Back to&lt;br/&gt;Drafting (4.1)" style="shape=ellipse;html=1;whiteSpace=wrap;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=3;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;fontFamily=Arial;fontSize=10;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="975" y="20" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_4_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="s_4_2" target="t_inspect_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2_4_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_inspect_4_2" target="gw_dec_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_dec_app_4_2" parent="1" value="[Approve]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="gw_dec_4_2" target="t_act_app_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_dec_rej_4_2" parent="1" value="[Decline]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="gw_dec_4_2" target="t_act_rej_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_app_sys_4_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_act_app_4_2" target="t_prov_app_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_app_log_4_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_prov_app_4_2" target="t_audit_app_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_app_pm_4_2" parent="1" value="Notification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="t_audit_app_4_2" target="t_pm_app_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_app_end_4_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_pm_app_4_2" target="end_app_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_rej_sys_4_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_act_rej_4_2" target="gw_reason_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_reason_yes_4_2" parent="1" value="[Valid Reason]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="gw_reason_4_2" target="t_prov_rej_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_rej_log_4_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_prov_rej_4_2" target="t_audit_rej_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_rej_pm_4_2" parent="1" value="Notification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="t_audit_rej_4_2" target="t_pm_rej_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pm_gw_4_2" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="t_pm_rej_4_2" target="gw_pm_action_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pm_cancel_4_2" parent="1" value="[Cancel]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="gw_pm_action_4_2" target="end_cancel_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pm_revise_4_2" parent="1" value="[Revise]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=10;fontColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="gw_pm_action_4_2" target="end_revise_4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cap_4_2" parent="1" value="Figure: BPMN Level 2 - Sub-Module 4.2: Admin Review &amp;amp; Decision Execution" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=11;fontStyle=1;fontColor=#000000;" vertex="1">
+          <mxGeometry x="310" y="580" width="520" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
